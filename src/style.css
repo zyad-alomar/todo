@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: solid black 3px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 80vh;
+}
+
+.side{
+    border: solid red 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.main{
+    border: solid blue 2px;
+}
+
+form{
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.dialog[open]{
+   position: absolute;
+   background-color:darkslategray;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.submit,.submit2{
+    border-radius: 30px;
+    background-color:cornflowerblue;
+    max-width: 100px;
+    color:black;
+    font-weight: bolder;
+}
+
+.dialog2[open]{
+   position: absolute;
+   background-color:darkslategray;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
