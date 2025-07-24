@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: indigo;
+    color : white;
 }
 header{
     display: flex;
@@ -56,4 +58,40 @@ form{
    display: flex;
    flex-direction: column;
    gap: 20px;
+}
+
+
+.tasks{
+    display: grid;
+    border: solid 3px black;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    margin-top: 20px;
+}
+
+.tasks div{
+    display:flex;
+    flex-direction: column;
+    border: red solid 3px;
+    height: 150px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: darkslategray;
+    color:white;
+
+}
+
+button{
+    width : 120px;
+     border-radius: 20px;
+     letter-spacing: 1.5;
+     font-weight: bolder;
+     background-color: yellow;
+     padding: 5px 0px 5px 0px;
+}
+
+.projects{
+    border: solid yellow 3px;
+    width: 80%;
+    margin-top: 30px;
 }
