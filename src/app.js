@@ -161,7 +161,7 @@ function deleting() {
     del.addEventListener("click", () => {
       let container = del.closest(".container");
       let key = container.querySelector(".key");
-
+      tasks.removeChild(container);
       let projects = [...document.querySelectorAll(".projects div")];
       for (let i = 0; i < projects.length; i++) {
         let grap = JSON.parse(localStorage.getItem(projects[i].textContent));
@@ -178,4 +178,9 @@ function deleting() {
       }
     });
   });
+}
+
+
+function editing(){
+  
 }
